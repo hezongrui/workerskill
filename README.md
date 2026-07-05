@@ -25,8 +25,9 @@
 
 适合：线上 bug、已知缺陷、回归问题
 
-1. `plan-bug`：先把现象、复现、范围、期望结果和修复边界整理清楚。
-2. `code-review`
+1. `bug-plan`：先把现象、复现、范围、期望结果和修复边界整理清楚。
+2. `bug-investigation`：配合用户逐步定位根因，每轮记录验证动作和结果。
+3. `code-review`
 
 ### 4. 新人上手流程
 
@@ -43,7 +44,8 @@
 | `plan-discover` | 需求还不清楚，需要先聊清目标、边界和成功标准 | `docs/specs/` |
 | `plan-prd` | 需求大致明确，需要整理成 PRD | `docs/prd/` |
 | `design-architect-system` | 新项目架构设计、老项目增量设计、模块拆分、技术方案 | `docs/architect/` |
-| `plan-bug` | 修 bug 前先整理问题现象、复现步骤、影响范围和修复边界 | `docs/bugs/` |
+| `bug-plan` | 修 bug 前先整理问题现象、复现步骤、影响范围和修复边界 | `docs/bugs/` |
+| `bug-investigation` | 配合用户逐步定位 bug 根因，每轮验证都记录操作和结果 | `docs/bugs/` |
 | `plan-dev` | 根据需求或架构文档确定开发顺序和文件边界 | `docs/plans/` |
 | `code-review` | 审查 diff、PR 或本地改动 | `docs/reviews/` |
 | `onboard-architecture` | 新人快速了解项目整体架构 | `docs/onboarding/architecture.md` |
@@ -59,7 +61,7 @@
    `plan-prd` -> `design-architect-system` -> `plan-dev` -> `code-review`
 
 3. 修 bug：
-   `plan-bug` -> `code-review`
+   `bug-plan` -> `bug-investigation` -> `code-review`
 
 4. 新人上手项目：
    `onboard-architecture` -> `onboard-modules` -> `onboard-focus`
